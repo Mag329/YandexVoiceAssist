@@ -1,0 +1,27 @@
+gpt:
+  max_tokens_request: 10
+  max_tokens_response: 10
+  system_content: Ты - дружелюбный помощник. Давай ответ на русском языке
+  temperature: 0.6
+  token_limit: 400
+main:
+  db_path: db.sqlite
+  max_sessions: 2
+  max_users: 2
+secret:
+  folder_id: FOLDER_ID
+  iam_token: IAM_TOKEN
+  owner_id: OWNER_ID
+  ssh:
+    host: HOST
+    key_file: SSH_KEY
+    username: USERNAME
+  stats:
+    stats_send_time: 'TIME'
+    stats_token: STATS_TOKEN
+    stats_url: STATS_URL
+  telegram_token: TELEGRAM_TOKEN
+  token_created_at: TIME
+speechkit:
+  max_blocks: 10
+  max_symbols: 200

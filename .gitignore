@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+logs/
+aa2851f364fe9041
+config_.yaml
+.DS_Store
