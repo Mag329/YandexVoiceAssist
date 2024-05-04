@@ -2,7 +2,7 @@
 
 Бот выполняет функцию внимательного и дружелюбного ассистента, с которым можно обсуждать любые вопросы
 
-### **Алгоритм работы бота:**
+### **Алгоритм работы бота**
 - Бот принимает текстовое или голосовое сообщение
 - Если получен текст, он отправляется в качестве промта в YandexGPT
 - Если получено голосовое сообщение:
@@ -48,3 +48,18 @@ pip install -r requirements.txt
 ```
 python3 start.py
 ```
+
+## Использование
+- /start — запустить бота
+- /help — список доступных команд
+- Лимит — отправка доступных токенов, символов и блоков 
+- Очистить историю - очистка истории разговора с GPT
+- /test — включить режим проверки распознавания и синтеза
+- /debug — получить файл с логами
+
+
+### **Использовано**
+![Python](https://img.shields.io/badge/Python-blue?style=for-the-badge)  
+![YandexGPT](https://img.shields.io/badge/YandexGPT-DD0031?style=for-the-badge)  
+![SpeechKit](https://img.shields.io/badge/SpeechKit-orange?style=for-the-badge)  
+![Telebot](https://img.shields.io/badge/Telebot-lightgray?style=for-the-badge)  

@@ -26,17 +26,17 @@ async def start_handler(message):
         await bot.send_message(message.chat.id, text)
 
 
+@bot.message_handler(commands=["help"])
+async def help_handler(message):
+    logging.warning(f"{message.from_user.id} - Использование /help")
+    await bot.send_message(message.chat.id, messages["bot"]["help"]["text"])
+
+
 @bot.message_handler(commands=["debug"])
 async def debug(message):
     logging.warning(f"{message.from_user.id} - Использование /debug")
     with open("logs/latest.log", "rb") as f:
         await bot.send_document(message.chat.id, f)
-
-
-@bot.message_handler(commands=["send_stats"])
-async def send_stats_handler(message):
-    await send_stats()
-    await bot.send_message(message.chat.id, "Well")
 
 
 @bot.message_handler(commands=["test"])
