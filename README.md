@@ -48,6 +48,7 @@ pip install -r requirements.txt
 ```
 python3 start.py
 ```
+6. Для использования статистики, необходимо запустить на своем сервере сайт из репозитория [BotStats](https://github.com/Mag329/BotStats)
 
 ## Использование
 - /start — запустить бота
